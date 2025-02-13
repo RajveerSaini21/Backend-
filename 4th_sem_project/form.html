@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <u><h1>College Admission Form</h1></u>
+        <form action="/post" method="post">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" 
+                       pattern="[A-Za-z\s]+" title="First name must only contain letters." required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" 
+                       pattern="[A-Za-z\s]+" title="Last name must only contain letters." required>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="percentage">XII Percentage</label>
+                <input type="text" id="percentage" name="percentage" placeholder="Enter your XII percentage" required>
+            </div>
+            <div class="form-group">
+                <label for="jee">JEE Percentile</label>
+                <input type="text" id="jee" name="jee" placeholder="Enter your JEE percentile" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select</option>
+                    <option value="general">General</option>
+                    <option value="general-ews">General-EWS</option>
+                    <option value="sc-st">SC/ST</option>
+                    <option value="obc">OBC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course" required>
+                    <option value="">Choose a course</option>
+                    <option value="bachelor">Bachelor's Program</option>
+                    <option value="bachelor-bba">&nbsp;&nbsp;&nbsp;BBA</option>
+                    <option value="bachelor-ba">&nbsp;&nbsp;&nbsp;BA</option>
+                    <option value="bachelor-btech">&nbsp;&nbsp;&nbsp;B.Tech</option>
+                    <option value="bachelor-bsc">&nbsp;&nbsp;&nbsp;BSc</option>
+                    <option value="bachelor-bcom">&nbsp;&nbsp;&nbsp;B.Com</option>
+                    <option value="master">Master's Program</option>
+                    <option value="master-mba">&nbsp;&nbsp;&nbsp;MBA</option>
+                    <option value="master-msc">&nbsp;&nbsp;&nbsp;M.Sc</option>
+                    <option value="master-ma">&nbsp;&nbsp;&nbsp;MA</option>
+                    <option value="master-mtech">&nbsp;&nbsp;&nbsp;M.Tech</option>
+                    <option value="master-mcom">&nbsp;&nbsp;&nbsp;M.Com</option>
+                    <option value="phd">PhD Program</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

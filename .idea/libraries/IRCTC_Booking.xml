@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IRCTC-Booking">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/IRCTC-Booking.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
